@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>Single Linked List</h3>
+    <div class="container">
+        <div class="linked-list-boundary">
+            <div id="head-pointer" class="pointer">Head</div>
+            <div id="linked-list-container" class="linked-list-container"></div>
+        </div>
+        <div class="controls">
+            <input type="text" id="value" placeholder="Enter Value">
+            <input type="number" id="position" placeholder="Position">
+            <button onclick="addBegin()">Add at Beginning</button>
+            <button onclick="addEnd()">Add at End</button>
+            <button onclick="addAtPosition()">Add at Position</button>
+            <button onclick="deleteFront()">Delete Front</button>
+            <button onclick="deleteLast()">Delete Last</button>
+            <button onclick="deleteAtPosition()">Delete at Position</button>
+            <!-- <button onclick="findElement()">Find Element</button> -->
+            <button onclick="traverseLinkedList()">Traverse</button>
+            <button onclick="findAllPositions()">Find All Positions</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
